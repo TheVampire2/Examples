@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BasicCRUDservice" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:19369/BasicCRUDservice.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:19369/BasicCRUDservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:19369/BasicCRUDservice.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBasicCRUDservice_ListCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IBasicCRUDservice_ListCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicCRUDservice_InsertCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IBasicCRUDservice_InsertCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicCRUDservice_EditCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IBasicCRUDservice_EditCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicCRUDservice_SaveCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IBasicCRUDservice_SaveCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicCRUDservice_DeleteCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IBasicCRUDservice_DeleteCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCustomerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBasicCRUDservice">
+    <wsdl:operation name="ListCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicCRUDservice/ListCustomers" message="tns:IBasicCRUDservice_ListCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicCRUDservice/ListCustomersResponse" message="tns:IBasicCRUDservice_ListCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicCRUDservice/InsertCustomer" message="tns:IBasicCRUDservice_InsertCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicCRUDservice/InsertCustomerResponse" message="tns:IBasicCRUDservice_InsertCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicCRUDservice/EditCustomer" message="tns:IBasicCRUDservice_EditCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicCRUDservice/EditCustomerResponse" message="tns:IBasicCRUDservice_EditCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicCRUDservice/SaveCustomer" message="tns:IBasicCRUDservice_SaveCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicCRUDservice/SaveCustomerResponse" message="tns:IBasicCRUDservice_SaveCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicCRUDservice/DeleteCustomer" message="tns:IBasicCRUDservice_DeleteCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicCRUDservice/DeleteCustomerResponse" message="tns:IBasicCRUDservice_DeleteCustomer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBasicCRUDservice" type="tns:IBasicCRUDservice">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListCustomers">
+      <soap:operation soapAction="http://tempuri.org/IBasicCRUDservice/ListCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <soap:operation soapAction="http://tempuri.org/IBasicCRUDservice/InsertCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <soap:operation soapAction="http://tempuri.org/IBasicCRUDservice/EditCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCustomer">
+      <soap:operation soapAction="http://tempuri.org/IBasicCRUDservice/SaveCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <soap:operation soapAction="http://tempuri.org/IBasicCRUDservice/DeleteCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BasicCRUDservice">
+    <wsdl:port name="BasicHttpBinding_IBasicCRUDservice" binding="tns:BasicHttpBinding_IBasicCRUDservice">
+      <soap:address location="http://localhost:19369/BasicCRUDservice.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

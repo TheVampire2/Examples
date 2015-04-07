@@ -1,0 +1,9 @@
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\CRUDTest\obj\Debug\CRUDTest.csprojResolveAssemblyReference.cache
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\CRUDTest\obj\Debug\CRUDTest.Form1.resources
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\CRUDTest\obj\Debug\CRUDTest.Properties.Resources.resources
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\CRUDTest\obj\Debug\CRUDTest.csproj.GenerateResource.Cache
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\CRUDTest\bin\Debug\CRUDTest.exe
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\CRUDTest\bin\Debug\CRUDTest.pdb
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\CRUDTest\obj\Debug\CRUDTest.exe
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\CRUDTest\obj\Debug\CRUDTest.pdb
+C:\Users\Vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\CRUDTest\bin\Debug\CRUDTest.exe.config

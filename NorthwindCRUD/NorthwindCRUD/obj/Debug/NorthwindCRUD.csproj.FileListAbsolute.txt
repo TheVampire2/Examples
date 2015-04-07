@@ -1,0 +1,6 @@
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\NorthwindCRUD\obj\Debug\NorthwindCRUD.csprojResolveAssemblyReference.cache
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\NorthwindCRUD\bin\NorthwindCRUD.dll.config
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\NorthwindCRUD\bin\NorthwindCRUD.dll
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\NorthwindCRUD\bin\NorthwindCRUD.pdb
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\NorthwindCRUD\obj\Debug\NorthwindCRUD.dll
+c:\users\vladimir\documents\visual studio 2013\Projects\NorthwindCRUD\NorthwindCRUD\obj\Debug\NorthwindCRUD.pdb
