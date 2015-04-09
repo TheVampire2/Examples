@@ -21,9 +21,12 @@ namespace NorthwindCRUD
             command.CommandText = "INSERT INTO Customers (CompanyName,ContactName,City,Country) VALUES ('" + CompanyName + "','" + contactName + "','" + City + "','" + Country + "');";
 
             conn.Open();
-            command.ExecuteNonQuery();
+            int success = command.ExecuteNonQuery();
             conn.Close();
-            return true;
+
+            if(success>0)
+                return true;
+            return false;
         }
         
         public static  DataSet ListCustomers()
@@ -76,9 +79,11 @@ namespace NorthwindCRUD
             command.CommandText = "UPDATE  Customers SET CompanyName='" + CompanyName +  "', ContactName='" + contactName + "',City='" + City + "',Country='" + Country +"' WHERE CustomerID='" + CustomerID + "';";
 
             conn.Open();
-            command.ExecuteNonQuery();
+            int success = command.ExecuteNonQuery();
             conn.Close();
-            return true;
+            if(success > 0)
+              return true;
+            return false;
         }
 
         public static bool DeleteCustomer(string  CustomerID)
@@ -89,9 +94,11 @@ namespace NorthwindCRUD
             command.Connection = conn;
             command.CommandText = "DELETE FROM Customers WHERE CustomerID='" + CustomerID + "';";
             conn.Open();
-            command.ExecuteNonQuery();
+            int success = command.ExecuteNonQuery();
             conn.Close();
-            return true;
+            if(success > 0)
+                return true;
+            return false;
         }
 
      
